@@ -9,7 +9,7 @@ sense.set_imu_config(False, False, False)
 
 def main():
     
-    # sense.show_message("press up")
+    sense.show_message("press up")
 
     while True: # programma loopt zolang niet afgebroken
         randomColor = random.randint(0,255),random.randint(0,255),random.randint(0,255)
