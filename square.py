@@ -8,7 +8,7 @@ sense.set_imu_config(False, False, False)
 
 def main():
     
-    # sense.show_message("press up")
+    sense.show_message("press up")
 
     while True: # programma loopt zolang niet afgebroken
         
@@ -17,7 +17,6 @@ def main():
         
         
         def square1():
-            print(1)
             sense.set_pixel(3,3,color)
             sense.set_pixel(4,4,color)
             sense.set_pixel(3,4,color)
