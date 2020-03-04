@@ -8,7 +8,7 @@ sense.set_imu_config(False, False, False)
 
 def main():
     
-    #sense.show_message("press up")
+    sense.show_message("press up")
 
     while True: # programma loopt zolang niet afgebroken
         x = 0
@@ -26,10 +26,10 @@ def main():
                 for p in range(4):
                     if randomValue == 1:
                         sense.set_pixel(p,y,randomColor)
-                        sense.set_pixel(p+4,y,randomColor)
+                        sense.set_pixel(7-p,y,randomColor)
                     elif randomValue == 0:
                         sense.set_pixel(p,y,0,0,0)
-                        sense.set_pixel(p+4,y,0,0,0)
+                        sense.set_pixel(7-p,y,0,0,0)
             sleep(5)
             avatar()
 
